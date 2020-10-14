@@ -112,7 +112,7 @@
             <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
             </div>
             <script>
-               var slideIndex = 1;
+               let slideIndex = 1;
                showDivs(slideIndex);
                
                function plusDivs(n) {
@@ -234,12 +234,34 @@
                href="https://fr.wikipedia.org/wiki/Guerre_de_Cent_Ans" target="_blank">Hundred year war</a> they had to
             rebuild parts of the abbey, and again during the <a
                href="https://en.wikipedia.org/wiki/French_Wars_of_Religion" target="_blank">wars of religion.</a></p>
-         
-            <img src="images/Moutier/Abbaye.JPG" alt="Moutier d'Ahun" width="600" height="460">
-            <img src="images/Moutier/Abbayeinside.jpg" alt="Moutier d'Ahun inside" width="600" height="460">
-            <img src="images/Moutier/abbeyInside.jpg" alt="Moutier inside" width="600" height="460">
-            <img src="images/Moutier/abbeyinside2.jpg" alt="Moutier Altar" width="600" height="460">
-         
+
+            <div class = "slideshow">
+            <img class="slideshow2" src="images/Moutier/Abbaye.JPG" alt="Moutier d'Ahun" width="600" height="460">
+            <img class="slideshow2" src="images/Moutier/Abbayeinside.jpg" alt="Moutier d'Ahun inside" width="600" height="460">
+            <img class="slideshow2" src="images/Moutier/abbeyInside.jpg" alt="Moutier inside" width="600" height="460">
+            <img class="slideshow2" src="images/Moutier/abbeyinside2.jpg" alt="Moutier Altar" width="600" height="460">
+            <button class="left" onclick="plusImgs(-1)">&#10094;</button>
+            <button class="right" onclick="plusImgs(+1)">&#10095;</button>
+            </div>
+            <script>
+               let slidingIndex = 1;
+               showImgs(slidingIndex);
+               
+               function plusImgs(n) {
+                 showImgs(slidingIndex += n);
+               }
+               
+               function showImgs(n) {
+                 let i;
+                 let photos = document.getElementsByClassName("slideshow2");
+                 if (n > photos.length) {slidingIndex = 1}
+                 if (n < 1) {slidingIndex = photos.length}
+                 for (i = 0; i < photos.length; i++) {
+                  photos[i].style.display = "none";  
+                 }
+                 photos[slidingIndex-1].style.display = "block";  
+               }
+               </script>
          <h3><a id="Villemonteix"></a><a href="index.html">Château de Villemonteix</a></h3>
          <p>As I said previously there are also castles in this area. They aren't necessarily as big as traditional
             castles. A local one to us is the castle of Villemonteix, built during the 15th century. It has been classed
