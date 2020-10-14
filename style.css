@@ -119,6 +119,12 @@ h2 {
     font-family: 'Satisfy', cursive;
     text-align: center;
     padding-top: 25px;
+    color: white;
+    background-image: url(images/Creuse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70px
  }
 
  h3 {
@@ -128,14 +134,7 @@ h2 {
     height: 30px
 }
 
-.title {
-    color: white;
-    background-image: url(images/Creuse.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 70px
-}
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
@@ -213,3 +212,43 @@ p {
     padding-right: 25px;
 }
 
+.scenery {
+    padding-left: 32px;
+}
+
+#rapids {
+    padding-right: 25px;
+    padding-bottom: 35px;
+}
+
+#monet {
+    padding-top: 155px;
+}
+
+#monets {
+    padding-left: 105px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#chamb {
+    padding-left: 112px;
+    padding-bottom: 25px;
+}
