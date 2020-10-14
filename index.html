@@ -55,7 +55,11 @@
             for my parents and brother!</p>
 
          <h3><a id="Winter"></a>Winters in La Creuse</h3>
-         <p>Winter was always fun for us! We would often have snow, and made lots of snow angels, snowmen, but more
+         <figure class="right">
+            <img src="images/Winter/Snowball.JPG" alt="Snowball family" width="600" height="400">
+            <figcaption class="smalltext">Epic snowball fight!</figcaption>
+         </figure>
+         <p class="lefttext">Winter was always fun for us! We would often have snow, and made lots of snow angels, snowmen, but more
             importantly, sledding!
             Opposite our house was a short steep hill that we always sledded down. One year some family and close
             friends came for a surprise visit.
@@ -63,29 +67,30 @@
             thrilled, the parents, not so much!
             We were constantly in and out, the floor was covered in newspaper to attempt to soak up the melting snow,
             there was gloves and clothes drying on radiators everywhere.</p>
-         <figure>
-            <img src="images/Winter/Snowball.JPG" alt="Snowball family" width="500" height="360">
-            <figcaption class="smalltext">Epic snowball fight!</figcaption>
-         </figure>
+        
          <br>
-         <p>There were a few notable winters, but the worst was 2007. The snow came down so thick and heavy, and then
+         <p class="under">There were a few notable winters, but the worst was 2007. The snow came down so thick and heavy, and then
             it
             froze. The trees were so laden I don't know how they didn't break. We actually ended up being without
             electricity for a week. In some villages it was up to 2 weeks. For us this meant we had no heating in
             most
             of our house, the living room had a wood burner that we used to stay warm!
-         <figure>
-            <img src="images/Winter/snowman.JPG" alt="Snowman" width="400" height="450">
-            <img src="images/Winter/Winter 2007 trees.JPG" alt="Trees laden with snow" width="500" height="360">
-            <img src="images/Winter/Winter 2007.JPG" alt="More snow covered trees" width="500" height="360">
-            <img src="images/Winter/Icicles.JPG" alt="Fountain with icicles" width="360" height="500">
-            <img src="images/Winter/Winter 2007-2.JPG" alt="Snow in front of house" width="500" height="360">
-            <figcaption class="smalltext">Lots of snow!</figcaption>
-         </figure>
+            
+            <div class = "snow-pictures">
+
+            <img id="trees" src="images/Winter/Winter-trees.JPG" alt="Trees laden with snow" width="500" height="360">
+
+            <img id = "ice" src="images/Winter/Icicles.JPG" alt="Fountain with icicles" width="360" height="500">
+
+            <img id="snowboi" src="images/Winter/snowman.JPG" alt="Snowman" width="360" height="500">
+
+            <img id="snowhouse"src="images/Winter/Winter 2007-2.JPG" alt="Snow in front of house" width="500" height="360">
+            
+            </div>
+           
          <br>
-         <h3><a id="Summer"></a>Summer's fantastic too!</h3>
-         <p>That's enough about winter, summers were always amazing. In fact the year we moved there was a heatwave
-            in
+         <h3><a id="Summer"></a><a href="index.html">Summer's fantastic too!</a></h3>
+         <p>That's enough about winter! It's summertime, yay! The year we moved there was a heatwave (boooo) in
             August, with temperatures reaching a whopping 41&deg;C, or 104&deg;F. These were the highest temperatures
             in
             50 years!</p>
@@ -98,15 +103,35 @@
             11
             (yep, even on the roads sometimes from one field to another, oops!)
          </p>
-         <figure>
-            <img src="images/Summer/Summer.JPG" alt="Summer in Chamberaud" width="500" height="360">
-            <img src="images/Summer/SummerTrees.jpg" alt="Trees" width="500" height="360">
-            <img src="images/Summer/CreuseRiver.jpg" alt="River Creuse in Summer" width="500" height="360">
-            <img src="images/Summer/Cows.jpg" alt="Herding Cows" width="500" height="360">
-            <figcaption class="smalltext">Some local photos of summer, plus a potato quality photo of cows</figcaption>
-         </figure>
+         <div class = "slideshow-container">
+            <img class="mySlides" src="images/Summer/Summer.JPG" alt="Summer in Chamberaud" width="800" height="560">
+            <img class="mySlides" src="images/Summer/SummerTrees.jpg" alt="Trees" width=width="800" height="560">
+            <img class="mySlides" src="images/Summer/CreuseRiver.jpg" alt="River Creuse in Summer" width="800" height="560">
+            <img class="mySlides" src="images/Summer/Cows.jpg" alt="Herding Cows" width="800" height="560">
+            <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+            <script>
+               var slideIndex = 1;
+               showDivs(slideIndex);
+               
+               function plusDivs(n) {
+                 showDivs(slideIndex += n);
+               }
+               
+               function showDivs(n) {
+                 let i;
+                 let image = document.getElementsByClassName("mySlides");
+                 if (n > image.length) {slideIndex = 1}
+                 if (n < 1) {slideIndex = image.length}
+                 for (i = 0; i < image.length; i++) {
+                  image[i].style.display = "none";  
+                 }
+                 image[slideIndex-1].style.display = "block";  
+               }
+               </script>
          <br>
-         <h3><a id="Autumn"></a>Autumn with a Halloween bonus</h3>
+         <h3><a id="Autumn"></a><a href="index.html">Autumn with a Halloween bonus</a></h3>
          <p>Autumn is also lovely here, there's so many trees and they're all changing colors! More importantly we
             can
             go foraging for mushrooms, hazelnuts, chestnuts and sometimes walnuts. The spooky season was good to us
@@ -118,9 +143,10 @@
             split
             it evenly. We were usually set until next Halloween!</p>
          <figure>
-            <img src="images/Autumn/Mushroom.jpg" alt="Mushrooms" width="500" height="360">
-            <img src="images/Autumn/Autumntrees.jpg" alt="Trees in autumn" width="500" height="360">
+            <img src="images/Autumn/Mushroom.jpg" alt="Mushrooms" width="400" height="360">
             <img src="images/Autumn/Halloweenspecial.jpg" alt="Dorky Halloween picture" width="500" height="360">
+            <img src="images/Autumn/Autumntrees.jpg" alt="Trees in autumn" width="500" height="360">
+         
             <figcaption class="smalltext">The biggest mushroom we ever found. Dorky Halloween picture, it's just too funny to leave
                out.
             </figcaption>
