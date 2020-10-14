@@ -14,6 +14,7 @@ h1 {
   padding: 30px;
   /*background-color: lightpink;*/
   font-family: 'Satisfy', cursive;
+  font-size: 50px;
  
 }
 
@@ -124,12 +125,13 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 70px
+    height: 70px;
+    font-size: 55px;
  }
 
  h3 {
     font-family: 'Satisfy', cursive;
-    font-size: 40px;
+    font-size: 45px;
     padding-left: 50px;
     height: 30px
 }
@@ -137,7 +139,7 @@ h2 {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     padding-left: 5px;
 }
 #About {
@@ -156,7 +158,7 @@ p {
 }
 
 .lefttext {
-    padding-top: 60px;
+    padding-top: 25px;
     
 }
 
@@ -229,10 +231,21 @@ p {
     padding-left: 105px;
 }
 
+#aubu {
+    padding-left: 205px;
+}
 
+#tapestry-text{
+    padding-top: 55px;
+}
 
+#tapestry {
+    padding-left: 105px;
+}
 
-
+#bridge {
+    padding-left: 300px;
+}
 
 
 
