@@ -140,7 +140,8 @@ h2 {
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    padding-left: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 #About {
     color: rgb(0, 63, 0);
@@ -248,14 +249,25 @@ p {
 }
 
 .slideshow {
-    padding-left: 300px;
+    padding-left: 190px;
+}
+
+.right {
+    float: center;
 
 }
 
+#right {
+    float: left;
+}
 
+.castle {
+    padding-left: 105px;
+}
 
-
-
+#window {
+    padding-left: 30px;
+}
 
 
 
